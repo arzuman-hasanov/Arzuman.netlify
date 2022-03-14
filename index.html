@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        // 1-ci usul
+        let first = 5;
+        let second = 7;
+
+        [ first, second ] = [ second, first ];
+        console.log(first, second);
+
+        // 2-ci usul
+        let a = 5;
+        let b = 7;
+        let c;
+
+        c = a;
+        a = b;
+        b = c;
+        console.log(a,b)
+
+        // Ders 1
+        let price = prompt("Enter price");
+        let manat = price.split(".")[0];
+        let qepik = price.split(".")[1];
+        console.log(manat + " manat " + qepik + " qepik");
+
+        // Ders 2
+        let salary = prompt("Enter your salary..");
+        let taxes = salary * 0.13;
+        console.log(salary - taxes);
+
+        // Ders 3
+        let input = prompt("Enter Surname, Name, Parent name");
+        let surname = input.split(" ")[0];
+        let name_letter = input.split(" ")[1][0];
+        let parent_name_letter = input.split(" ")[2][0];
+        
+        console.log(surname + " " + name_letter + "." + parent_name_letter + ".");
+
+        // Ders Bonus
+        let price1 = Number(prompt("Enter price.."));
+        let month = Number(prompt("Enter month.."));
+        let taxes1 = Number(prompt("Enter taxes.."));
+        let profit = price1 + (price1 * taxes1 / 100 * month);
+
+        console.log(`${month} aydan sonra ${profit} olacaq`);
+
+
+    </script>
+</body>
+</html>
